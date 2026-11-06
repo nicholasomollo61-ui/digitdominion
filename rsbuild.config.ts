@@ -18,12 +18,10 @@ const smartchartsDist = path.join(
 );
 
 export default defineConfig({
-  plugins: [
-    pluginSass({
-      sassLoaderOptions: { sourceMap: true },
-      exclude: /node_modules/,
-    }),
-    pluginReact(),
+  output: { 
+    publicPath: './',
+    },
+    plugins: [
   ],
   source: {
     entry: { index: './src/main.tsx' },
