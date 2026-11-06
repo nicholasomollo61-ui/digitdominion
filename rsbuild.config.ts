@@ -22,7 +22,7 @@ export default defineConfig({
     publicPath: './',
     },
     plugins: [
-  ],
+   ],
   source: {
     entry: { index: './src/main.tsx' },
     define: {
